@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ object.id }}</title>
+</head>
+<body>
+    <h1>{{ object.title }}</h1>
+    <h2>{{ object.author }} - {{ object.creation_date }}</h2>
+    <p>{{ object.description }}</p>
+    {%  for genre in genres %}
+        <h3>{{ genre.name }}</h3>
+    {% endfor %}
+</body>
+</html>
